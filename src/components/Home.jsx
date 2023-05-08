@@ -29,6 +29,7 @@ import HogwartsLetter from '../assets/img/hogwarts letter.jpg';
 import DefenceClass from '../assets/img/DADA.jpg';
 import Library from '../assets/img/old library.jpg';
 import MalfoyPunch from '../assets/img/how to punch.jpeg';
+import YuleBall from '../assets/img/yule ball dress.jpg';
 
 const breakpointColumnsObj = {
 	default: 6,
@@ -237,6 +238,12 @@ function Home() {
 					<div>
 						<a href="https://media.tenor.com/lsEP3hNWkIQAAAAC/crookshanks-cat.gif" target="_blank" rel="noreferrer">
 							<img src={Crookshanks} alt="my cat Crookshanks"/>
+						</a>
+					</div>
+
+                    <div>
+						<a href="https://live.staticflickr.com/8322/7963605912_b700e54647_b.jpg" target="_blank" rel="noreferrer">
+							<img src={YuleBall} alt="my Yule Ball dress"/>
 						</a>
 					</div>
 			</Masonry>
