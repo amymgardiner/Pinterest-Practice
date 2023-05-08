@@ -15,7 +15,7 @@ import KingsCross from './/assets/img/platform 9_3.4.jpg';
 const breakpointColumnsObj = {
 	default: 6,
 	1100: 4,
-	700: 3,
+	800: 3,
 	500: 2
 };
 
