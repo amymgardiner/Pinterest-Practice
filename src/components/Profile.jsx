@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link} from "react-router-dom";
 import { BsPinterest } from "react-icons/bs";
-import ProfileImage from '../assets/img/Hermione.webp';
+import ProfileImage from '../assets/img/Hermione.png';
 import Pins from './Pins'
 
 function Profile() {
@@ -19,8 +19,8 @@ function Profile() {
 				</div>
 			</div>
 
-			<div className="flex flex-col items-center px-8 py-8">
-				<div class="w-[7.5rem] aspect-square mb-4">
+			<div className="flex flex-col items-center px-8 py-8 text-center">
+				<div class="w-[7.5rem] aspect-square mb-4 profile--picture">
 					<img src={ProfileImage} alt="Hermione Granger" className="object-contain rounded-[50%] aspect-square"/>
 				</div>
 				<h1 className="text-4xl font-semibold mb-4">Hermione Granger</h1>

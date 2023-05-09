@@ -52,6 +52,19 @@ a:hover {
   cursor: pointer;
 }
 
+.profile--picture {
+  border-radius: 50%;
+  position: relative;
+  background-color: white;
+  transition: all .25s ease;
+  padding: 0.25rem;
+}
+
+.profile--picture:hover{
+  background-color: #d7edff;
+  cursor: pointer;
+}
+
 .wrapper {
   padding: 1rem;
 }
@@ -79,6 +92,16 @@ a:hover {
   border-radius: 1rem;
 }
 
+.main-masonry-grid_column > div > img:hover {
+  -webkit-filter: brightness(.7);
+  filter: brightness(.7);
+}
+
 .main-masonry-grid_column > div > a> img {
   border-radius: 1rem;
+}
+
+.main-masonry-grid_column > div > a> img:hover {
+  -webkit-filter: brightness(.7);
+  filter: brightness(.7);
 }

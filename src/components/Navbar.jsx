@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link} from "react-router-dom";
 import { BsPinterest } from "react-icons/bs";
-import ProfileImage from '../assets/img/Hermione.webp';
+import ProfileImage from '../assets/img/Hermione.png';
 
 function Navbar() {
 	return (
