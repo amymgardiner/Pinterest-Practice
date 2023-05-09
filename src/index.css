@@ -9,11 +9,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 .nav-header--icon {
   border-radius: 50%;
   position: relative;
@@ -54,17 +49,17 @@ code {
   background-clip: padding-box;
 }
 
-/* Style your items */
-.main-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+/* Style the grid items */
+.main-masonry-grid_column > div { /* change div to reference the elements in <Masonry> if needed */
   background: white;
   margin-bottom: 1rem;
   border-radius: 1rem;
 }
 
-.main-masonry-grid_column > div > img { /* change div to reference your elements you put in <Masonry> */
+.main-masonry-grid_column > div > img {
   border-radius: 1rem;
 }
 
-.main-masonry-grid_column > div > a> img { /* change div to reference your elements you put in <Masonry> */
+.main-masonry-grid_column > div > a> img {
   border-radius: 1rem;
 }
