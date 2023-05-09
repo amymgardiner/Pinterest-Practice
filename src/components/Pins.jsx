@@ -31,14 +31,15 @@ import Library from '../assets/img/old library.jpg';
 import MalfoyPunch from '../assets/img/how to punch.jpeg';
 import YuleBall from '../assets/img/yule ball dress.jpg';
 
-const breakpointColumnsObj = {
-	default: 6,
-	1100: 4,
-	800: 3,
-	500: 2
-};
-
 function Pins() {
+
+    const breakpointColumnsObj = {
+        default: 6,
+        1100: 4,
+        800: 3,
+        500: 2
+    };
+    
 	return (
 		<div className="wrapper">
 			<Masonry
