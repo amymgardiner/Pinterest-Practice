@@ -14,7 +14,7 @@ function Navbar() {
 			<h1 className="text-base font-bold text-center p-2.5">Hermione Granger's Pinterest</h1>
 			<div className="nav-header--profile">
 				<Link to="/profile">
-					<img src={ProfileImage} alt="Hermione Granger" className="w-[1.5rem] aspect-square rounded-[50%]"/>
+					<img src={ProfileImage} alt="Hermione Granger" className="object-contain aspect-square rounded-[50%] w-[1.5rem]"/>
 				</Link>
 			</div>
 		</nav>

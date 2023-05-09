@@ -9,6 +9,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 .nav-header--icon {
   border-radius: 50%;
   position: relative;
@@ -19,6 +23,7 @@ body {
 
 .nav-header--icon:hover {
   background-color: #f0f0f0;
+  cursor: pointer;
 }
 
 .nav-header--profile {
@@ -31,6 +36,20 @@ body {
 
 .nav-header--profile:hover {
   background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.nav-header--home {
+  border-radius: 24px;
+  position: relative;
+  background-color: white;
+  transition: all .25s ease;
+  padding: 0.25rem;
+}
+
+.nav-header--home:hover {
+  background-color: #d7edff;
+  cursor: pointer;
 }
 
 .wrapper {
