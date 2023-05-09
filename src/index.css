@@ -14,6 +14,30 @@ code {
     monospace;
 }
 
+.nav-header--icon {
+  border-radius: 50%;
+  position: relative;
+  background-color: white;
+  transition: all .25s ease;
+  padding: 0.625rem;
+}
+
+.nav-header--icon:hover {
+  background-color: #f0f0f0;
+}
+
+.nav-header--profile {
+  border-radius: 50%;
+  position: relative;
+  background-color: white;
+  transition: all .25s ease;
+  padding: 0.625rem;
+}
+
+.nav-header--profile:hover {
+  background-color: #f0f0f0;
+}
+
 .wrapper {
   padding: 1rem;
 }
