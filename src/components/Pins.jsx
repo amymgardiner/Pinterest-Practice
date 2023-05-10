@@ -30,16 +30,21 @@ import DefenceClass from '../assets/img/DADA.jpg';
 import Library from '../assets/img/old library.jpg';
 import MalfoyPunch from '../assets/img/how to punch.jpeg';
 import YuleBall from '../assets/img/yule ball dress.jpg';
+import Rose from '../assets/img/rose.jpg';
+import HogwartsHistory from '../assets/img/hogswarts history.gif';
+import Otter from '../assets/img/otter.jpg';
+import RedHead from '../assets/img/redhead.webp';
+import Wands from '../assets/img/wands up.gif';
 
 function Pins() {
 
-    const breakpointColumnsObj = {
-        default: 6,
-        1100: 4,
-        800: 3,
-        500: 2
-    };
-    
+	const breakpointColumnsObj = {
+		default: 6,
+		1100: 4,
+		800: 3,
+		500: 2
+	};
+	
 	return (
 		<div className="wrapper">
 			<Masonry
@@ -62,9 +67,9 @@ function Pins() {
 					</div>
 
 					<div>
-					<a href="https://i.pinimg.com/originals/b4/17/fb/b417fb2e58a4042db024f0fb863e7618.jpg" target="_blank" rel="noreferrer">
-						<img src={HogwartsLibrary} alt="Hogwarts library"/>
-					</a>
+						<a href="https://i.pinimg.com/originals/b4/17/fb/b417fb2e58a4042db024f0fb863e7618.jpg" target="_blank" rel="noreferrer">
+							<img src={HogwartsLibrary} alt="Hogwarts library"/>
+						</a>
 					</div>
 
 					<div>
@@ -74,8 +79,8 @@ function Pins() {
 					</div>
 
 					<div>
-						<a href="https://www.whatspaper.com/wp-content/uploads/2021/12/hd-gryffindor-wallpaper-whatspaper-12.jpg" target="_blank" rel="noreferrer">
-							<img src={Gryffindor} alt="Gryffindor crest over common room"/>
+						<a href="https://i.pinimg.com/564x/6b/dd/7a/6bdd7ae3799ea894557c8366ddd8769f--drawing-room-living-room.jpg" target="_blank" rel="noreferrer">
+							<img src={CommonRoom} alt="Gryffindor common room"/>
 						</a>
 					</div>
 
@@ -103,11 +108,10 @@ function Pins() {
 						</a>
 					</div>
 
-
 					<div>
-					<a href="https://images.unsplash.com/photo-1547756536-cde3673fa2e5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1241&q=80" target="_blank" rel="noreferrer">
-						<img src={HogwartsExpress} alt="Hogwarts Express train"/>
-					</a>
+						<a href="https://i.pinimg.com/originals/e7/df/3b/e7df3b0efbf2ef8baa1cde136970d753.gif" target="_blank" rel="noreferrer">
+							<img src={HogwartsHistory} alt="Hogwarts Express train"/>
+						</a>
 					</div>
 
 					<div>
@@ -140,7 +144,6 @@ function Pins() {
 						</a>
 					</div>
 
-
 					<div>
 						<a href="https://images.musicalexpert.org/slideshow-mobile-small/quill-ink-pot-and-poetry-book.jpg" target="_blank" rel="noreferrer">
 							<img src={Writing} alt="feather quill writing on parchment"/>
@@ -148,14 +151,14 @@ function Pins() {
 					</div>
 
 					<div>
-						<a href="https://media.tenor.com/0oz7jnV9mGQAAAAC/dark-academia.gif" target="_blank" rel="noreferrer">
-							<img src={Portraits} alt="moving portraits at Hogwarts"/>
+						<a href="https://potter10th.weebly.com/uploads/9/4/7/9/94794318/list-of-members-of-dumbledore-s-army-harry-potter-11720591-355-500_1.jpg" target="_blank" rel="noreferrer">
+							<img src={DumbledoreArmy} alt="Dumbledore's Army"/>
 						</a>
 					</div>
 
 					<div>
-						<a href="https://i.pinimg.com/564x/6b/dd/7a/6bdd7ae3799ea894557c8366ddd8769f--drawing-room-living-room.jpg" target="_blank" rel="noreferrer">
-							<img src={CommonRoom} alt="Gryffindor common room"/>
+						<a href="https://i.redd.it/1w1elt6x9me91.gif" target="_blank" rel="noreferrer">
+							<img src={GreatHall} alt="Enchanted Ceiling in the Great Hall"/>
 						</a>
 					</div>
 
@@ -172,9 +175,14 @@ function Pins() {
 					</div>
 
 					<div>
-						<a href="https://i.pinimg.com/originals/97/29/fa/9729fafc2285411f24ddb05795938c72.jpg" target="_blank" rel="noreferrer">
-							<img src={ScottishHighlands} alt="scottish highlands"/>
+						<a href="https://ids.si.edu/ids/deliveryService?id=NMAH-AHB2016q007096&max=1000" target="_blank" rel="noreferrer">
+							<img src={MalfoyPunch} alt="how to throw a punch"/>
 						</a>
+						<div className="px-2 pb-4">
+							<p className="text-sm">
+								<strong>Punch pure-blood supremacy clear in the face.</strong>
+							</p>
+						</div>
 					</div>
 
 					<div>
@@ -184,8 +192,8 @@ function Pins() {
 					</div>
 
 					<div>
-						<a href="https://potter10th.weebly.com/uploads/9/4/7/9/94794318/list-of-members-of-dumbledore-s-army-harry-potter-11720591-355-500_1.jpg" target="_blank" rel="noreferrer">
-							<img src={DumbledoreArmy} alt="Dumbledore's Army"/>
+						<a href="https://media.tenor.com/0oz7jnV9mGQAAAAC/dark-academia.gif" target="_blank" rel="noreferrer">
+							<img src={Portraits} alt="moving portraits at Hogwarts"/>
 						</a>
 					</div>
 
@@ -214,26 +222,33 @@ function Pins() {
 					</div>
 
 					<div>
-						<a href="https://i.redd.it/1w1elt6x9me91.gif" target="_blank" rel="noreferrer">
-							<img src={GreatHall} alt="Enchanted Ceiling in the Great Hall"/>
-						</a>
-					</div>
-
-					<div>
 						<a href="https://images.unsplash.com/photo-1613324766451-2d03b2ea8190?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" target="_blank" rel="noreferrer">
 							<img src={Library} alt="an old library"/>
 						</a>
 					</div>
 
 					<div>
-						<a href="https://ids.si.edu/ids/deliveryService?id=NMAH-AHB2016q007096&max=1000" target="_blank" rel="noreferrer">
-							<img src={MalfoyPunch} alt="how to throw a punch"/>
+						<a href="https://www.whatspaper.com/wp-content/uploads/2021/12/hd-gryffindor-wallpaper-whatspaper-12.jpg" target="_blank" rel="noreferrer">
+							<img src={Gryffindor} alt="Gryffindor crest over common room"/>
 						</a>
-						<div className="px-2 pb-4">
-							<p className="text-sm">
-								<strong>Punch pure-blood supremacy clear in the face.</strong>
-							</p>
-						</div>
+					</div>
+
+					<div>
+						<a href="https://i.pinimg.com/originals/97/29/fa/9729fafc2285411f24ddb05795938c72.jpg" target="_blank" rel="noreferrer">
+							<img src={ScottishHighlands} alt="scottish highlands"/>
+						</a>
+					</div>
+
+					<div>
+						<a href="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1893&q=80" target="_blank" rel="noreferrer">
+							<img src={Rose} alt="a red rose over book pages"/>
+						</a>
+					</div>
+
+					<div>
+						<a href="https://live.staticflickr.com/8322/7963605912_b700e54647_b.jpg" target="_blank" rel="noreferrer">
+							<img src={YuleBall} alt="my Yule Ball dress"/>
+						</a>
 					</div>
 
 					<div>
@@ -242,9 +257,27 @@ function Pins() {
 						</a>
 					</div>
 
-                    <div>
-						<a href="https://live.staticflickr.com/8322/7963605912_b700e54647_b.jpg" target="_blank" rel="noreferrer">
-							<img src={YuleBall} alt="my Yule Ball dress"/>
+					<div>
+						<a href="https://images.unsplash.com/photo-1547756536-cde3673fa2e5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1241&q=80" target="_blank" rel="noreferrer">
+							<img src={HogwartsExpress} alt="Hogwarts Express train"/>
+						</a>
+					</div>
+
+					<div>
+						<a href="https://us.123rf.com/450wm/mrsveronik/mrsveronik2208/mrsveronik220800870/190900850-sporty-hiker-walk-mountains-on-river-bridge-redhead-traveler-look-summer-landscape-back-view-close.jpg?ver=6" target="_blank" rel="noreferrer">
+							<img src={RedHead} alt="I like a certain redhead guy"/>
+						</a>
+					</div>
+
+					<div>
+						<a href="https://cdnb.artstation.com/p/assets/images/images/031/926/945/large/kim-williams-1bd6b6e7-0e00-4c86-916c-f9370e97901a.jpg?1605001265" target="_blank" rel="noreferrer">
+							<img src={Otter} alt="my patronus is an otter"/>
+						</a>
+					</div>
+
+					<div>
+						<a href="https://media.tenor.com/X_lfVUqbey8AAAAC/hp-harry-potter.gif" target="_blank" rel="noreferrer">
+							<img src={Wands} alt="wands up for Dumbledore"/>
 						</a>
 					</div>
 			</Masonry>
