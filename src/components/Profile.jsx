@@ -8,7 +8,7 @@ function Profile() {
 	return (
 		<div>
 
-			<header class="px-8 py-2.5">
+			<header className="px-8 py-2.5">
 				<nav className="flex justify-between nav-header items-center">
 					<div className="nav-header--icon">
 						<Link to="https://www.pinterest.com/" target="_blank" rel="noreferrer" className="text-2xl text-[#e60023]">
