@@ -20,9 +20,6 @@ const Home = () => {
 				{categorySelected === "" && (
 					<Pins />
 				)} 
-				{categorySelected === "Home" && (
-					<Pins />
-				)} 
 				{categorySelected === "Cats" && (
 					<Cats />
 				)} 
