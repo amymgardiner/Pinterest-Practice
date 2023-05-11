@@ -77,19 +77,6 @@ a:hover {
 	display: none;
 }
 
-.mobile-navigation__button {
-	border-radius: 50%;
-	position: relative;
-	background-color: white;
-	transition: all .25s ease;
-	padding: 0.625rem;
-}
-
-.mobile-navigation__button:hover {
-	background-color: #f0f0f0;
-	cursor: pointer;
-}
-
 .wrapper {
 	padding: 1rem;
 }

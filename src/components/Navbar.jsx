@@ -50,13 +50,14 @@ function Navbar(props) {
 
 				<div className="mobile-navigation">
 					<div
-					className="mobile-navigation__button"
+					className="text-3xl mobile-navigation__button"
 					onClick={() => setIsActive(!isActive)}>{isActive ? <HiMinus/> : <HiPlus/>}</div>
 					
 					{isActive &&
 					<ul>
 						{categories.map(category => (
 						<li
+						className="bg-[#f0f0f0] hover:bg-[#e2e2e2] py-1 text-center px-2"
 						key={category}
 						onClick={() => setCategoryelected(category)}>{category}</li>
 						))}
