@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link} from "react-router-dom";
 import { BsPinterest } from "react-icons/bs";
+import { HiPlus } from "react-icons/hi";
 import ProfileImage from '../assets/img/Hermione.png';
 
 function Navbar(props) {
@@ -47,6 +48,16 @@ function Navbar(props) {
 					onClick={refresh}>Home</Link>
 				</div>
 			</nav>
+			<div>
+				<div><HiPlus/></div>
+				<ul>
+					{categories.map(category => (
+					<li
+					key={category}
+					onClick={() => setCategoryelected(category)}>{category}</li>
+					))}
+				</ul>
+			</div>
 			
 		</header>
 	);
