@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link} from "react-router-dom";
 import { BsPinterest } from "react-icons/bs";
-import { HiPlus } from "react-icons/hi";
+import { HiPlus, HiMinus } from "react-icons/hi";
 import ProfileImage from '../assets/img/Hermione.png';
 
 function Navbar(props) {
@@ -10,6 +10,8 @@ function Navbar(props) {
 	const { setCategoryelected } = props;
 
 	const refresh = () => window.location.reload(true)
+
+	const [isActive, setIsActive] = useState(false);
 
 	return (
 		<header className="px-8 py-2">
@@ -49,14 +51,18 @@ function Navbar(props) {
 				</div>
 			</nav>
 			<div>
-				<div><HiPlus/></div>
+				<div
+				className="mobile-navigation"
+				onClick={() => setIsActive(!isActive)}>{isActive ? <HiMinus/> : <HiPlus/>}</div>
+				
+				{isActive &&
 				<ul>
 					{categories.map(category => (
 					<li
 					key={category}
 					onClick={() => setCategoryelected(category)}>{category}</li>
 					))}
-				</ul>
+				</ul>}
 			</div>
 			
 		</header>
