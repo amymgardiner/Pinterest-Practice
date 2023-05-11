@@ -10,20 +10,36 @@ import WizardingWorld from './WizardingWorld'
 
 const Home = () => {
 
-	const [homeSelected, setHomeSelected] = useState();
-	const [catsSelected, setCatsSelected] = useState(false);
-	const [gryffindorSelected, setGryffindorSelected] = useState(false);
-	const [hogwartsSelected, setHogwartsSelected] = useState(false);
-	const [natureSelected, setNatureSelected] = useState(false);
-	const [readingSelected, setReadingSelected] = useState(false);
-	const [wizardSelected, setWizardSelected] = useState(false);
+	const [categorySelected, setCategoryelected] = useState("");
 
 	return (
         <div>
-            <Navbar setHomeSelected={setHomeSelected} setCatsSelected={setCatsSelected} setGryffindorSelected={setGryffindorSelected} setHogwartsSelected={setHogwartsSelected} setNatureSelected={setNatureSelected} setReadingSelected={setReadingSelected} setWizardSelected={setWizardSelected}/>
+            <Navbar setCategoryelected={setCategoryelected}/>
             <main>
-				{homeSelected ? (<Pins/>) : catsSelected ? (<Cats/>) : gryffindorSelected ? (<Gryffindor/>) : hogwartsSelected ? (<HogwartsSchool/>) : natureSelected ? (<Nature/>) : readingSelected ? (<Reading/>) : wizardSelected ? (<WizardingWorld />) : (<Pins/>)}
-            </main>
+
+				{categorySelected === "Home" && (
+					<Pins />
+				)} 
+				{categorySelected === "Cats" && (
+					<Cats />
+				)} 
+				{categorySelected === "Gryffindor" && (
+					<Gryffindor />
+				)} 
+				{categorySelected === "Hogwarts" && (
+					<HogwartsSchool />
+				)} 
+				{categorySelected === "Nature" && (
+					<Nature />
+				)} 
+				{categorySelected === "Reading" && (
+					<Reading />
+				)} 
+				{categorySelected === "Wizarding World" && (
+					<WizardingWorld />
+				)}
+            
+			</main>
         </div>
 	);
 }
