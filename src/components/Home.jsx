@@ -17,6 +17,9 @@ const Home = () => {
             <Navbar setCategoryelected={setCategoryelected}/>
             <main>
 
+				{categorySelected === "" && (
+					<Pins />
+				)} 
 				{categorySelected === "Home" && (
 					<Pins />
 				)} 
