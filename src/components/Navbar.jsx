@@ -24,6 +24,7 @@ function Navbar(props) {
 				</div>
 
 				<h1 className="text-base font-bold text-center p-2.5 page--title">Hermione Granger's Pinterest</h1>
+				<h1 className="text-base font-bold text-center p-2.5 page--title_mobile"><Link to="/profile">Hermione Granger's Pinterest</Link></h1>
 
 				<div className="nav-header--profile">
 					<Link to="/profile">

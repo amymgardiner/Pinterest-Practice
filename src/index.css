@@ -73,6 +73,10 @@ a:hover {
 	display: none;
 }
 
+.page--title_mobile {
+	display: none;
+}
+
 .wrapper {
 	padding: 1rem;
 }
@@ -141,8 +145,17 @@ a:hover {
 		display: block;
 	}
 
+	.page--title {
+		display: none;
+	}
+
+	.page--title_mobile {
+		display: block;
+	}
+
 	.profile {
 		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
 	}
 
 	.hermione-picture {
