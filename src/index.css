@@ -65,15 +65,11 @@ a:hover {
 	cursor: pointer;
 }
 
-.nav-header__mobile > .mobile-navigation {
+.mobile-navigation {
 	display: none;
 }
 
-.nav-header__mobile > .nav-header--icon {
-	display: none;
-}
-
-.nav-header__mobile > .nav-header--profile {
+.nav-header--icon_mobile {
 	display: none;
 }
 
@@ -133,30 +129,24 @@ a:hover {
 		display: none;
 	}
 
-	.nav-header__mobile > .nav-header--icon {
-		display: block;
-	}
-	
-	.nav-header__mobile > .nav-header--profile {
-		display: block;
-	}
-
-	.nav-header__mobile {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
-
-	.nav-header__mobile > .nav-header--button {
+	.nav-header__categories {
 		display: none;
 	}
 
-	.nav-header__mobile > .mobile-navigation {
+	.mobile-navigation {
+		display: block;
+	}
+
+	.nav-header--icon_mobile {
 		display: block;
 	}
 
 	.profile {
 		padding-top: 0.5rem;
+	}
+
+	.hermione-picture {
+		max-width:none;
 	}
 
 }

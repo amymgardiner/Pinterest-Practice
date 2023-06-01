@@ -32,7 +32,7 @@ function Navbar(props) {
 				</div>
 			</div>
 
-			<nav className="grid items-center grid-cols-7 gap-6 px-8 lg:grid-cols-4 lg:gap-1 nav-header__mobile">
+			<nav className="grid items-center grid-cols-7 gap-6 px-8 lg:grid-cols-4 lg:gap-1 nav-header__categories">
 				{categories.map(category => (
 					<button
 					className="flex items-center justify-center h-12 px-4 text-center text-black hover:bg-[#e2e2e2] bg-[#f0f0f0] rounded-3xl nav-header--button"
@@ -42,39 +42,42 @@ function Navbar(props) {
 					</button>
 				))}
 
-				<div className="nav-header--icon">
-					<Link to="https://www.pinterest.com/" target="_blank" rel="noreferrer" className="text-2xl text-[#e60023]">
-						<BsPinterest/>
-					</Link>
-				</div>
-
-				<div className="mobile-navigation">
-					<div
-					className="text-3xl mobile-navigation__button"
-					onClick={() => setIsActive(!isActive)}>{isActive ? <HiMinus/> : <HiPlus/>}</div>
-					
-					{isActive &&
-					<ul>
-						{categories.map(category => (
-						<li
-						className="bg-[#f0f0f0] hover:bg-[#e2e2e2] py-1 text-center px-2"
-						key={category}
-						onClick={() => setCategoryelected(category)}>{category}</li>
-						))}
-					</ul>}
-				</div>
-
 				<div className="nav-header--home">
 					<Link
 					to="/"
 					className="flex items-center justify-center h-12 px-4 text-center text-white bg-black rounded-3xl"
 					onClick={refresh}>Home</Link>
 				</div>
+			</nav>
 
-				<div className="nav-header--profile">
-					<Link to="/profile">
-						<img src={ProfileImage} alt="Hermione Granger" className="object-contain aspect-square rounded-[50%] w-[1.5rem]"/>
+			<nav className="flex items-center justify-between pb-2">
+			<div className="absolute nav-header--icon_mobile right-[85%]">
+					<Link to="https://www.pinterest.com/" target="_blank" rel="noreferrer" className="text-2xl text-[#e60023]">
+						<BsPinterest/>
 					</Link>
+				</div>
+
+				<div className="absolute mobile-navigation left-[85%]">
+					<div
+					className="text-3xl mobile-navigation__button"
+					onClick={() => setIsActive(!isActive)}>{isActive ? <HiMinus/> : <HiPlus/>}</div>
+					
+					{isActive &&
+						<ul className="bg-[#f0f0f0] absolute end-1/2">
+							{categories.map(category => (
+							<li
+							className="hover:bg-[#e2e2e2] py-1 text-center px-2"
+							key={category}
+							onClick={() => setCategoryelected(category)}>{category}</li>
+							))}
+							<li>
+								<Link
+								to="/"
+								className="flex items-center justify-center h-12 px-4 text-center text-white bg-black"
+								onClick={refresh}>Home</Link>
+							</li>
+						</ul>
+					}
 				</div>
 			</nav>
 		</header>
