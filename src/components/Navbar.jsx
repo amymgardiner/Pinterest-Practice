@@ -64,10 +64,10 @@ function Navbar(props) {
 					onClick={() => setIsActive(!isActive)}>{isActive ? <HiMinus/> : <HiPlus/>}</div>
 					
 					{isActive &&
-						<ul className="bg-[#f0f0f0] absolute end-1/2">
+						<ul className="bg-[#f0f0f0] absolute end-1/4">
 							{categories.map(category => (
 							<li
-							className="hover:bg-[#e2e2e2] py-1 text-center px-2"
+							className="hover:bg-[#e2e2e2] py-1 text-center px-4"
 							key={category}
 							onClick={() => setCategoryelected(category)}>{category}</li>
 							))}
