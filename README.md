@@ -13,4 +13,4 @@ This was a fun project for code practice and I hope you enjoy!
 [Hermione Granger's Pinterest Page](https://leafy-narwhal-1e3dd9.netlify.app/)
 
 ## Screenshot
-![leafy-narwhal-1e3dd9 netlify app_ (1)](https://github.com/amymgardiner/Pinterest-Practice/assets/99151426/310d4a79-4872-4b82-a6cc-f705b77b39ba)
+![localhost_3000_](https://github.com/amymgardiner/Pinterest-Practice/assets/99151426/7c7ecdad-9311-43f5-916e-a0fbcfed516c)
